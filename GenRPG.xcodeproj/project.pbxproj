@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A373D1422D62826200E6122A /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = A373D1412D62826200E6122A /* OpenAI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A3CC0D712D61575200E1816D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A373D1422D62826200E6122A /* OpenAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = GenRPG;
 			packageProductDependencies = (
+				A373D1412D62826200E6122A /* OpenAI */,
 			);
 			productName = GenRPG;
 			productReference = A3CC0D5D2D61575100E1816D /* GenRPG.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = A3CC0D542D61575100E1816D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A373D1402D6280AB00E6122A /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A3CC0D5E2D61575100E1816D /* Products */;
 			projectDirPath = "";
@@ -591,6 +600,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A373D1402D6280AB00E6122A /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A373D1412D62826200E6122A /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A373D1402D6280AB00E6122A /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A3CC0D552D61575100E1816D /* Project object */;
 }
