@@ -47,6 +47,20 @@
                   startingLineNumber = "340"
                   endingLineNumber = "340">
                </Location>
+               <Location
+                  uuid = "A139654C-E196-4EBA-ACC2-96F1980AC50E - 18e31a46cd183f37"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for GenRPG.GameViewModel.generateLocationEvent() async -&gt; ()"
+                  moduleName = "GenRPG.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryot/dev/genrpg/GenRPG/GenRPG/RPGCode.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "340"
+                  endingLineNumber = "340">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
