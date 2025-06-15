@@ -657,7 +657,7 @@ class OpenAIService {
         request.httpBody = try? JSONSerialization.data(withJSONObject: body)
         
         let (data, _) = try await URLSession.shared.data(for: request)
-        let response = try JSONDecoder().decode(OpenAIChatResponse.self, from: data)
+        let response = try JSONDecoder().decode(ChatResponse.self, from: data)
         if let content = response.choices.first?.message.content {
             return content
         } else if let error = response.error {
@@ -720,9 +720,9 @@ class OpenAIService {
     
 }
 
-// MARK: - OpenAI API Response Models
+// MARK: - API Response Models
 
-struct OpenAIChatResponse: Decodable {
+struct ChatResponse: Decodable {
     struct Choice: Decodable {
         struct Message: Decodable {
             let content: String
@@ -730,16 +730,16 @@ struct OpenAIChatResponse: Decodable {
         let message: Message
     }
     let choices: [Choice]
-    let error: OpenAIError?
+    let error: APIError?
 }
 
-struct OpenAIImageResponse: Decodable {
+struct ImageResponse: Decodable {
     let images: [String]
 //    let request:
-    let error: OpenAIError?
+    let error: APIError?
 }
 
-struct OpenAIError: Decodable, Error {
+struct APIError: Decodable, Error {
     let message: String
     let type: String?
     let param: String?
