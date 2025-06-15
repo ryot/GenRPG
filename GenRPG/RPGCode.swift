@@ -636,7 +636,7 @@ struct ProgressBar: View {
 // MARK: - OpenAI Service
 
 class OpenAIService {
-    private let apiKey: String = "U58jHAOFzyP2FD8RMiajLY_EHwwB2RPcvW58pHAdIt" // Replace with your OpenAI API key
+    private let apiKey: String = ""
     private let baseURL = "https://api.venice.ai/api/v1"
     
     init() {}
