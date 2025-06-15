@@ -280,7 +280,7 @@ class GameViewModel: ObservableObject {
     
     init() {
         let configuration = OpenAI.Configuration(
-            token: "U58jHAOFzyP2FD8RMiajLY_EHwwB2RPcvW58pHAdIt",
+            token: "",
             host: "api.venice.ai",
             basePath: "api/v1",
             timeoutInterval: 30.0)
@@ -681,8 +681,8 @@ class OpenAIService {
         let body: [String: Any] = [
             "model": "fluently-xl",
             "prompt": prompt,
-            "width": 1024,
-            "height": 1024,
+            "width": 800,
+            "height": 600,
             "steps": 6,
             "safe_mode": true,
             "hide_watermark": true,
